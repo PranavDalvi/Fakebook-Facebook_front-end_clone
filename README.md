@@ -6,3 +6,5 @@
 - User profile Image is used from [Flaticon](https://www.flaticon.com/free-icon/man_2922510?term=user&page=1&position=57&page=1&position=57&related_id=2922510&origin=search)
 
 Check out the site NOW! [Fakebook.com](https://pranavdalvi.github.io/Fakebook-Facebook_front-end_clone/)
+
+Built Status: Still in development
