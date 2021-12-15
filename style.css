@@ -45,8 +45,8 @@ input:focus {
 }
 
 .showModal {
-  padding: 5px 150px 5px 10px;
-  margin: 4px 0px 0px 0px;
+  padding: 5px 15px 5px 15px;
+  margin: 0px 10px 0px 10px;
   border: 1px;
   border-radius: var(--borderRadius);
   background-color: var(--searchBarBg);
@@ -274,6 +274,9 @@ input:focus {
   font-size: 25px;
   display: flex;
   margin: 0px 0px 0px 20px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
 .mainTitleNotify button{
