@@ -6,27 +6,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./style.css" />
-  <title>Fakebook</title>
+  <title>JetMeteor | Fakebook</title>
 </head>
 
 <body>
   <div class="navbar">
-    <div class="searchbarModal hidden">
-      <button class="hideModal">
-        <img class="navExitImage" src="./asserts/Images/nav/arrow-left.svg" alt="exit" />
-      </button>
-
-      <form>
-        <input class="searchInput" type="search" name="searchBar" value="🔍️ Search Fakebook" />
-      </form>
-      <p class="search-item">This is Fakebook made by Pranav Dalvi</p>
-    </div>
+    
+    
 
     <div class="searchBar">
+      <img class="navTitle" src="./asserts/Images/nav/logo.svg" alt="">
       <button class="showModal">
         <img class="searchImg" src="./asserts/Images/nav/search.svg" alt="search" />
       </button>
-      <p>Fakebook</p>
+    </div>
+    
+    <div class="navOptions">
+      <img class="Options active" src="./asserts/Images/nav/home.svg" alt="home" />
+      <img class="Options" src="./asserts/Images/nav/group.svg" alt="contacts" />
+      <img class="Options" src="./asserts/Images/nav/video.svg" alt="contacts" />
+      <img class="Options" src="./asserts/Images/nav/bag.svg" alt="contacts" />
+      <img class="Options" src="./asserts/Images/nav/gaming.svg" alt="contacts" />
     </div>
     <div class="navOptions2">
       <a class="spacer" href="#"><img class="Options2" src="./asserts/Images/nav/moon.svg" alt="mode" /></a>
@@ -49,9 +49,50 @@
             <p><b>Chat</b></p>
             <button class="notificationOptions"><img src="./asserts/Images/nav/more-horizontal.svg" alt=""></button>
           </div>
-          <a class="dropdownContent-a" href="#">Link 1</a>
-          <a class="dropdownContent-a" href="#">Link 2</a>
-          <a class="dropdownContent-a" href="#">Link 3</a>
+          <!-- <a class="dropdownContent-a" href="#"> -->
+            <div class="mainMenu">
+              <a class="dropdownContent-a" href="#"><img class="userPic" src="https://avatars.dicebear.com/api/human/users-are-best.svg" alt="">
+                <div class="profileOptions">
+                  <div class="commonFlex">
+                    <div class="notificationTitle">
+                      <p>David The Bro</p>
+                    </div>
+                    <div class="menuSubtitle">
+                      <p>Hey there how are you?</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          <!-- </a> -->
+          <div class="mainMenu">
+            <a class="dropdownContent-a" href="#"><img class="userPic" src="https://avatars.dicebear.com/api/human/niko.svg" alt="">
+              <div class="profileOptions">
+                <div class="commonFlex">
+                  <div class="notificationTitle">
+                    <p>CJ the Johnson kid</p>
+                  </div>
+                  <div class="menuSubtitle">
+                    <p>Should we meet tomorrow?</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="mainMenu">
+            <a class="dropdownContent-a" href="#"><img class="userPic" src="https://avatars.dicebear.com/api/human/steve.svg" alt="">
+              <div class="profileOptions">
+                <div class="commonFlex">
+                  <div class="notificationTitle">
+                    <p>Alice progunner</p>
+                  </div>
+                  <div class="menuSubtitle">
+                    <p>Can you send me today's notes?</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
 
@@ -63,7 +104,7 @@
             <p><b>Notifications</b></p>
             <button class="notificationOptions"><img src="./asserts/Images/nav/more-horizontal.svg" alt=""></button>
           </div>
-          <a class="dropdownContent-a" href="#">
+          <!-- <a class="dropdownContent-a" href="#"> -->
             <div class="mainMenu">
               <a class="dropdownContent-a" href="#"><img src="./asserts/Images/nav/facebook.svg" alt="">
                 <div class="profileOptions">
@@ -78,7 +119,7 @@
                 </div>
               </a>
             </div>
-          </a>
+          <!-- </a> -->
 
         </div>
       </div>
@@ -90,7 +131,7 @@
           <div><a class="dropdownContent-a" href="#">
               <div class="mainMenu">
                 <div class="profilePic">
-                  <img class="userPic" src="./asserts/Images/nav/profile.png" alt="Profile Image">
+                  <img class="userPic" src="https://avatars.dicebear.com/api/human/JetMeteor.svg" alt="Profile Image">
                 </div>
                 <div class="profileOptions">
                   <div class="commonFlex">
@@ -172,13 +213,13 @@
         </div>
       </div>
     </div>
-    <div class="navOptions">
-      <img class="Options active" src="./asserts/Images/nav/home.svg" alt="home" />
-      <img class="Options" src="./asserts/Images/nav/group.svg" alt="contacts" />
-      <img class="Options" src="./asserts/Images/nav/video.svg" alt="contacts" />
-      <img class="Options" src="./asserts/Images/nav/bag.svg" alt="contacts" />
-      <img class="Options" src="./asserts/Images/nav/gaming.svg" alt="contacts" />
-    </div>
+  </div>
+
+  <div class="searchbarModal hidden">
+    <form>
+      <input class="searchInput" type="search" name="searchBar" value="🔍️ Search Fakebook" />
+    </form>
+    <p class="search-item">Made with &#10084; by Pranav Dalvi</p>
   </div>
 
   <script src="./script.js"></script>

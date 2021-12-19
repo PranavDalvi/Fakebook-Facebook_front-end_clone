@@ -19,6 +19,12 @@ body {
   font-family: Helvetica, sans-serif;
 }
 
+.navTitle{
+  height: 19px;
+  margin-left: 15px;
+  margin-top: 9px;
+}
+
 .spacer {
   margin-right: 10px;
 }
@@ -28,9 +34,12 @@ input:focus {
 }
 
 .navbar {
+  display: flex;
   background-color: var(--mainNavbarColor);
   padding: 5px 0px 3px 0px;
   box-shadow: var(--mainBoxShadow);
+  justify-content: space-between;
+  align-items: center;
 }
 
 .fbLogo {
@@ -123,10 +132,10 @@ input:focus {
   margin-left: 8px;
 }
 
-.navExitImage {
+/* .navExitImage {
   height: 15px;
   width: auto;
-}
+} */
 
 .searchInput {
   border: none;
@@ -135,12 +144,12 @@ input:focus {
   background-color: var(--searchBarBg);
 }
 
-.hideModal {
+/* .hideModal {
   cursor: pointer;
   border: none;
   background: none;
   margin: 5px 5px 5px 5px;
-}
+} */
 
 .dropdown {
   position: relative;
@@ -197,6 +206,9 @@ input:focus {
   border-radius: 6px;
   padding: 0px 10px 0px 10px;
   margin-left: 10px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 .dropdownContent-a:hover{

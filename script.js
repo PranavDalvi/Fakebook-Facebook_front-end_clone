@@ -1,7 +1,7 @@
 "use strict";
 const modal = document.querySelector(".searchbarModal");
-const oldSearch = document.querySelector(".searchBar");
-const btnHideModel = document.querySelector(".hideModal");
+// const oldSearch = document.querySelector(".searchBar");
+// const btnHideModel = document.querySelector(".hideModal");
 const bntShowModel = document.querySelector(".showModal");
 
 const dropbtn = document.querySelector(".dropbtn");
@@ -13,13 +13,13 @@ const dropdownContentMsg = document.querySelector(".dropdownContentMsg");
 const dropbtnNotify = document.querySelector(".dropbtnNotify");
 const dropdownContentNotify = document.querySelector(".dropdownContentNotify");
 
-const hideModel = function () {
-  modal.classList.add("hidden");
-  oldSearch.classList.remove("hidden");
-};
+// const hideModel = function () {
+//   modal.classList.add("hidden");
+//   oldSearch.classList.remove("hidden");
+// };
 const showModel = function () {
-  modal.classList.remove("hidden");
-  oldSearch.classList.add("hidden");
+  modal.classList.toggle("hidden");
+  // oldSearch.classList.add("hidden");
 };
 
 const hideAllDropdowns = function () {
@@ -33,15 +33,15 @@ bntShowModel.addEventListener("click", function () {
   showModel();
   hideAllDropdowns();
 });
-btnHideModel.addEventListener("click", function () {
-  hideModel();
-  hideAllDropdowns();
-});
+// btnHideModel.addEventListener("click", function () {
+//   hideModel();
+//   hideAllDropdowns();
+// });
 
 dropbtn.addEventListener("click", function () {
   dropdownContent.classList.toggle("hidden");
 
-  hideModel();
+  modal.classList.add("hidden");
   dropdownContentMenu.classList.add("hidden");
   dropdownContentMsg.classList.add("hidden");
   dropdownContentNotify.classList.add("hidden");
@@ -50,7 +50,7 @@ dropbtn.addEventListener("click", function () {
 dropbtnMenu.addEventListener("click", function () {
   dropdownContentMenu.classList.toggle("hidden");
 
-  hideModel();
+  modal.classList.add("hidden");
   dropdownContent.classList.add("hidden");
   dropdownContentMsg.classList.add("hidden");
   dropdownContentNotify.classList.add("hidden");
@@ -59,7 +59,7 @@ dropbtnMenu.addEventListener("click", function () {
 dropbtnMsg.addEventListener("click", function () {
   dropdownContentMsg.classList.toggle("hidden");
 
-  hideModel();
+  modal.classList.add("hidden");
   dropdownContent.classList.add("hidden");
   dropdownContentMenu.classList.add("hidden");
   dropdownContentNotify.classList.add("hidden");
@@ -68,7 +68,7 @@ dropbtnMsg.addEventListener("click", function () {
 dropbtnNotify.addEventListener("click", function () {
   dropdownContentNotify.classList.toggle("hidden");
 
-  hideModel();
+  modal.classList.add("hidden");
   dropdownContent.classList.add("hidden");
   dropdownContentMenu.classList.add("hidden");
   dropdownContentMsg.classList.add("hidden");
