@@ -7,5 +7,5 @@
 - Check out the site NOW! [Fakebook.com](https://pranavdalvi.github.io/Fakebook-Facebook_front-end_clone/)
 
 - Built Status: **Still in development**
-- Please use desktop to view this site.
-- Thankyou 🙏
+- Please use PC or Tab to view this site.
+- Thank you 🙏
