@@ -157,9 +157,11 @@ input:focus {
 }
 
 .dropdownContentMenu {
+  padding: 15px;
   position: absolute;
-  background-color: #ffffff;
-  transform: translateX(-320px);
+  background-color: #f7f8fa;
+  border-radius: 6px;
+  transform: translateX(-345px);
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   width: 510px;
   height: 550px;
@@ -220,7 +222,6 @@ input:focus {
   display: flex;
   border-radius: 6px;
   padding: 0px 10px 0px 10px;
-  margin-left: 10px;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
@@ -228,8 +229,16 @@ input:focus {
 
 .dropdownContent-a:hover{
   background-color: var(--searchBarBg);
-
 }
+
+.extraMargin-left{
+  margin-left: 10px;
+}
+
+.extraPadding{
+  padding: 10px;
+}
+
 .mainMenu-contains {  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -243,13 +252,18 @@ input:focus {
 }
 
 .menu-left { 
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #ffffff;
   grid-area: menu-left;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 }
 
 .menu-right { 
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #ffffff;
   grid-area: menu-right;
   display: flex;
   flex-direction: column;
@@ -345,6 +359,11 @@ input:focus {
 .mainTitleNotify img:hover{
   background-color: var(--navOptions2BgHover);
   cursor: pointer;
+}
+
+.mainTitleMenu{
+  padding-left: 10px;
+  font-size: 20px;  
 }
 
 .userPic{
